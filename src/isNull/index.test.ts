@@ -1,6 +1,6 @@
 import isNull from './index';
 
-describe('toLowerCase', () => {
+describe('isNull', () => {
   [
     {
       inputValue: null,
@@ -30,5 +30,9 @@ describe('toLowerCase', () => {
     test(`isNull(${inputValue}) should be ${expectedResult}`, () => {
       expect(isNull(inputValue)).toBe(expectedResult);
     });
+  });
+
+  test(`isNull() should be false`, () => {
+    expect(isNull()).toBe(false);
   });
 });

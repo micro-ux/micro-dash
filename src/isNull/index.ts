@@ -13,6 +13,6 @@
  *
  * This is equivalent to `_.isNull` method of lodash
  */
-export default function isNull(value: any): boolean {
+export default function isNull(value?: any): boolean {
   return value === null;
 }

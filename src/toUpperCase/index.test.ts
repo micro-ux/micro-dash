@@ -1,62 +1,80 @@
 import toUpperCase from './index';
 
 describe('toUpperCase', () => {
-  [
-    {
-      inputString: null,
-      expectedResult: '',
-    },
-    {
-      inputString: undefined,
-      expectedResult: '',
-    },
-    {
-      inputString: void 0,
-      expectedResult: '',
-    },
-    {
-      inputString: '',
-      expectedResult: '',
-    },
-    {
-      inputString: 'Lorem',
-      expectedResult: 'LOREM',
-    },
-    {
-      inputString: 'lorem',
-      expectedResult: 'LOREM',
-    },
-    {
-      inputString: 'Lorem Ipsum',
-      expectedResult: 'LOREM IPSUM',
-    },
-    {
-      inputString: 'lorem ipsum',
-      expectedResult: 'LOREM IPSUM',
-    },
-    {
-      inputString: 'loremIpsum',
-      expectedResult: 'LOREMIPSUM',
-    },
-    {
-      inputString: '---loremIpsum',
-      expectedResult: '---LOREMIPSUM',
-    },
-    {
-      inputString: '---lorem-Ipsum---',
-      expectedResult: '---LOREM-IPSUM---',
-    },
-    {
-      inputString: '___lorem__Ipsum___',
-      expectedResult: '___LOREM__IPSUM___',
-    },
-    {
-      inputString: '---lorem_Ipsum---',
-      expectedResult: '---LOREM_IPSUM---',
-    },
-  ].forEach(({ inputString, expectedResult }) => {
-    test(`toUpperCase(${inputString}) should be ${expectedResult}`, () => {
-      expect(toUpperCase(inputString)).toBe(expectedResult);
+  describe('invalid input', () => {
+    [
+      {
+        inputValue: null,
+        expectedResult: '',
+        expectedResultDesc: 'empty string',
+      },
+      {
+        inputValue: undefined,
+        expectedResult: '',
+        expectedResultDesc: 'empty string',
+      },
+      {
+        inputValue: void 0,
+        expectedResult: '',
+        expectedResultDesc: 'empty string',
+      },
+      {
+        inputValue: '',
+        expectedResult: '',
+        expectedResultDesc: 'empty string',
+      },
+    ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
+      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+        expect(toUpperCase(inputValue)).toBe(expectedResult);
+      });
+    });
+
+    test(`toUpperCase() should be empty string`, () => {
+      expect(toUpperCase()).toBe('');
+    });
+  });
+  describe('valid input', () => {
+    [
+      {
+        inputValue: 'Lorem',
+        expectedResult: 'LOREM',
+      },
+      {
+        inputValue: 'lorem',
+        expectedResult: 'LOREM',
+      },
+      {
+        inputValue: 'Lorem Ipsum',
+        expectedResult: 'LOREM IPSUM',
+      },
+      {
+        inputValue: 'lorem ipsum',
+        expectedResult: 'LOREM IPSUM',
+      },
+      {
+        inputValue: 'loremIpsum',
+        expectedResult: 'LOREMIPSUM',
+      },
+      {
+        inputValue: '---loremIpsum',
+        expectedResult: '---LOREMIPSUM',
+      },
+      {
+        inputValue: '---lorem-Ipsum---',
+        expectedResult: '---LOREM-IPSUM---',
+      },
+      {
+        inputValue: '___lorem__Ipsum___',
+        expectedResult: '___LOREM__IPSUM___',
+      },
+      {
+        inputValue: '---lorem_Ipsum---',
+        expectedResult: '---LOREM_IPSUM---',
+      },
+    ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
+      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+        expect(toUpperCase(inputValue)).toBe(expectedResult);
+      });
     });
   });
 });
