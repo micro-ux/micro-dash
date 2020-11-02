@@ -5,13 +5,13 @@
  * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
  * @example
  *
- * _.isNull(null);
+ * isNull(null);
  * // => true
  *
- * _.isNull(void 0);
+ * isNull(void 0);
  * // => false
  *
- * This is equivalent to `_.isNull` method of lodash
+ * This is equivalent to `lodash.isNull` method of lodash
  */
 export default function isNull(value?: any): boolean {
   return value === null;
