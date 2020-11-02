@@ -18,6 +18,20 @@ module.exports = (inputPackageVersion) => {
       },
     },
     {
+      moduleName: 'micro-dash.isfunction',
+      packageVersion,
+      outputPath: 'dist/micro-dash.isfunction/isFunction',
+      webpack: {
+        entryPath: './src/isFunction',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.isfunction',
+      },
+    },
+    {
       moduleName: 'micro-dash.isnull',
       packageVersion,
       outputPath: 'dist/micro-dash.isnull/isNull',
@@ -57,6 +71,20 @@ module.exports = (inputPackageVersion) => {
       },
       typescript: {
         outputDir: 'dist/micro-dash.isundefinedornull',
+      },
+    },
+    {
+      moduleName: 'micro-dash.poll',
+      packageVersion,
+      outputPath: 'dist/micro-dash.poll/poll',
+      webpack: {
+        entryPath: './src/poll',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.poll',
       },
     },
     {
