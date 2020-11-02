@@ -24,12 +24,12 @@ describe('toUpperCase', () => {
         expectedResultDesc: 'empty string',
       },
     ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
-      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+      test(`toLowerCase(${inputValue}) => ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
         expect(toUpperCase(inputValue)).toBe(expectedResult);
       });
     });
 
-    test(`toUpperCase() should be empty string`, () => {
+    test(`toUpperCase() => empty string`, () => {
       expect(toUpperCase()).toBe('');
     });
   });
@@ -72,7 +72,7 @@ describe('toUpperCase', () => {
         expectedResult: '---LOREM_IPSUM---',
       },
     ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
-      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+      test(`toLowerCase(${inputValue}) => ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
         expect(toUpperCase(inputValue)).toBe(expectedResult);
       });
     });

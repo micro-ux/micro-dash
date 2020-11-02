@@ -14,5 +14,5 @@
  * This is equivalent to `lodash.isNil` method. But changed the method name to bring more clarity.
  */
 export default function isUndefinedOrNull(value?: any): boolean {
-  return value === undefined || value === null;
+  return typeof value === 'undefined' || value === null;
 }

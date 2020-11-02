@@ -27,12 +27,12 @@ describe('isUndefinedOrNull', () => {
       expectedResult: false,
     },
   ].forEach(({ inputValue, expectedResult }) => {
-    test(`isUndefinedOrNull(${inputValue}) should be ${expectedResult}`, () => {
+    test(`isUndefinedOrNull(${inputValue}) => ${expectedResult}`, () => {
       expect(isUndefinedOrNull(inputValue)).toBe(expectedResult);
     });
   });
 
-  test(`isUndefinedOrNull() should be true`, () => {
+  test(`isUndefinedOrNull() => true`, () => {
     expect(isUndefinedOrNull()).toBe(true);
   });
 });

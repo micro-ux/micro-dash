@@ -14,5 +14,5 @@
  * This is equivalent to `lodash.isUndefined` method
  */
 export default function isUndefined(value?: any): boolean {
-  return value === undefined;
+  return typeof value === 'undefined';
 }

@@ -1,4 +1,3 @@
-import { strict, string } from 'yargs';
 import toLowerCase from './index';
 
 describe('toLowerCase', () => {
@@ -25,12 +24,12 @@ describe('toLowerCase', () => {
         expectedResultDesc: 'empty string',
       },
     ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
-      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+      test(`toLowerCase(${inputValue}) => ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
         expect(toLowerCase(inputValue)).toBe(expectedResult);
       });
     });
 
-    test(`toLowerCase() should be empty string`, () => {
+    test(`toLowerCase() => empty string`, () => {
       expect(toLowerCase()).toBe('');
     });
   });
@@ -73,7 +72,7 @@ describe('toLowerCase', () => {
         expectedResult: '---lorem_ipsum---',
       },
     ].forEach(({ inputValue, expectedResult, expectedResultDesc }: { inputValue: any; expectedResult: string; expectedResultDesc?: string }) => {
-      test(`toLowerCase(${inputValue}) should be ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
+      test(`toLowerCase(${inputValue}) => ${expectedResultDesc ? expectedResultDesc : expectedResult}`, () => {
         expect(toLowerCase(inputValue)).toBe(expectedResult);
       });
     });

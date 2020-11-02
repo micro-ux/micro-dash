@@ -27,12 +27,12 @@ describe('isNull', () => {
       expectedResult: false,
     },
   ].forEach(({ inputValue, expectedResult }) => {
-    test(`isNull(${inputValue}) should be ${expectedResult}`, () => {
+    test(`isNull(${inputValue}) => ${expectedResult}`, () => {
       expect(isNull(inputValue)).toBe(expectedResult);
     });
   });
 
-  test(`isNull() should be false`, () => {
+  test(`isNull() => false`, () => {
     expect(isNull()).toBe(false);
   });
 });
