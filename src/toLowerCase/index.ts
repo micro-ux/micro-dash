@@ -17,6 +17,6 @@
  *
  * This is equivalent to `_.toLower()` method of lodash
  */
-export default function toLowerCase(str: string): string {
+export default function toLowerCase(str?: string | null): string {
   return (str || '').toLowerCase();
 }

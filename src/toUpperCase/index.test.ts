@@ -11,6 +11,10 @@ describe('toUpperCase', () => {
       expectedResult: '',
     },
     {
+      inputString: void 0,
+      expectedResult: '',
+    },
+    {
       inputString: '',
       expectedResult: '',
     },

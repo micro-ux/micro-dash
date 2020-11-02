@@ -17,6 +17,6 @@
  *
  * This is equivalent to `_.toUpper()` method of lodash
  */
-export default function toUpperCase(str: string): string {
+export default function toUpperCase(str?: string | null): string {
   return (str || '').toUpperCase();
 }
