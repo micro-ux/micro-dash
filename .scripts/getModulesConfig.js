@@ -18,6 +18,48 @@ module.exports = (inputPackageVersion) => {
       },
     },
     {
+      moduleName: 'micro-dash.isnull',
+      packageVersion,
+      outputPath: 'dist/micro-dash.isnull/isNull',
+      webpack: {
+        entryPath: './src/isNull',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.isnull',
+      },
+    },
+    {
+      moduleName: 'micro-dash.isundefined',
+      packageVersion,
+      outputPath: 'dist/micro-dash.isundefined/isUndefined',
+      webpack: {
+        entryPath: './src/isUndefined',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.isundefined',
+      },
+    },
+    {
+      moduleName: 'micro-dash.isundefinedornull',
+      packageVersion,
+      outputPath: 'dist/micro-dash.isundefinedornull/isUndefinedOrNull',
+      webpack: {
+        entryPath: './src/isUndefinedOrNull',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.isundefinedornull',
+      },
+    },
+    {
       moduleName: 'micro-dash.tolowercase',
       packageVersion,
       outputPath: 'dist/micro-dash.tolowercase/toLowerCase',

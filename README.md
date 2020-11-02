@@ -10,10 +10,13 @@ It is essentially a re-write of [lodash](https://github.com/lodash/lodash) (many
 
 Each of the methods below are exported as an individual npm module (optimized for web). However, if you are planning to use this library in NodeJS environment you should be using the main @micro-ui/micro-dash library (optimized for node) instead. See section below for more details.
 
-| Category | Method      | Installation                                | Npm Module                                                                                                                                                     |
-| -------- | ----------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| String   | toLowerCase | `yarn add @micro-ux/micro-dash.tolowercase` | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.tolowercase.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.tolowercase) |
-| String   | toUpperCase | `yarn add @micro-ux/micro-dash.touppercase` | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.touppercase.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.touppercase) |
+| Category | Method            | Installation                                      | Npm Module                                                                                                                                                                 |
+| -------- | ----------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Object   | isNull            | `yarn add @micro-ux/micro-dash.isnull`            | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.isnull.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.isnull)                       |
+| Object   | isUndefined       | `yarn add @micro-ux/micro-dash.isundefined`       | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.isundefined.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.isundefined)             |
+| Object   | isUndefinedOrNull | `yarn add @micro-ux/micro-dash.isundefinedornull` | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.isundefinedornull.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.isundefinedornull) |
+| String   | toLowerCase       | `yarn add @micro-ux/micro-dash.tolowercase`       | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.tolowercase.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.tolowercase)             |
+| String   | toUpperCase       | `yarn add @micro-ux/micro-dash.touppercase`       | [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.touppercase.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash.touppercase)             |
 
 **Note** Implementation of other methods is still in progress
 
