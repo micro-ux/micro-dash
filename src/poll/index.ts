@@ -61,9 +61,7 @@ export default function poll(options: PollerOptions): PollerHandle {
     let tries = 1;
     const doPoll = function doPoll() {
       // If the condition is met, we're done!
-      const r = options.shouldPollingStop(callbackParams);
-      console.log('value of r = ', r);
-      if (r) {
+      if (options.shouldPollingStop(callbackParams)) {
         tries = 1;
         timerHandle = undefined;
         options.onSuccess(callbackParams);
