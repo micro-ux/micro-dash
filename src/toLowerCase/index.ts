@@ -1,5 +1,3 @@
-import { isNullOrUndefined } from '../__internal/objectUtils';
-
 /**
  * Converts `string` as a whole, to lower case, just like [String#toLowerCase](https://mdn.io/toLowerCase).
  * It does not affect the value of the input string itself.
@@ -20,5 +18,5 @@ import { isNullOrUndefined } from '../__internal/objectUtils';
  * This is equivalent to `_.toLower()` method of lodash
  */
 export default function toLowerCase(str: string): string {
-  return isNullOrUndefined(str) ? '' : str.toLowerCase();
+  return (str || '').toLowerCase();
 }

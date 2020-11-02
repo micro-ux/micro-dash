@@ -1,5 +1,3 @@
-import { isNullOrUndefined } from '../__internal/objectUtils';
-
 /**
  * Converts `string` as a whole, to upper case, just like [String#toUpperCase](https://mdn.io/toUpperCase).
  * It does not affect the value of the input string itself.
@@ -20,5 +18,5 @@ import { isNullOrUndefined } from '../__internal/objectUtils';
  * This is equivalent to `_.toUpper()` method of lodash
  */
 export default function toUpperCase(str: string): string {
-  return isNullOrUndefined(str) ? '' : str.toUpperCase();
+  return (str || '').toUpperCase();
 }
