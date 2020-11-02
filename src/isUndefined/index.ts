@@ -10,6 +10,8 @@
  *
  * isUndefined(null);
  * // => false
+ *
+ * This is equivalent to `lodash.isUndefined` method
  */
 export default function isUndefined(value?: any): boolean {
   return value === undefined;

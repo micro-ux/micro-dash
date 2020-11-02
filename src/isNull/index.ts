@@ -11,7 +11,7 @@
  * isNull(void 0);
  * // => false
  *
- * This is equivalent to `lodash.isNull` method of lodash
+ * This is equivalent to `lodash.isNull` method
  */
 export default function isNull(value?: any): boolean {
   return value === null;
