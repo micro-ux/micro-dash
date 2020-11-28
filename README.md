@@ -1,6 +1,6 @@
 # micro-dash &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/micro-ux/micro-dash/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/micro-ux/micro-dash) [![npm version](https://img.shields.io/npm/v/@micro-ux/micro-dash.svg?style=flat)](https://www.npmjs.com/package/@micro-ux/micro-dash)
 
-micro-dash offers a subset of lodash of the functionality found in [lodash](https://github.com/lodash/lodash)
+micro-dash offers a subset of lodash of the functionality found in [lodash](https://github.com/lodash/lodash) + additional useful utilities
 
 **Note**: This is still work in progress
 

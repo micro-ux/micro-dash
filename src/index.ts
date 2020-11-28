@@ -1,4 +1,5 @@
 /** Object utils */
+export { default as get } from './get';
 export { default as isNull } from './isNull';
 export { default as isUndefined } from './isUndefined';
 export { default as isUndefinedOrNull } from './isUndefinedOrNull';

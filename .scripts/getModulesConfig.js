@@ -32,6 +32,20 @@ module.exports = (inputPackageVersion) => {
       },
     },
     {
+      moduleName: 'micro-dash.get',
+      packageVersion,
+      outputPath: 'dist/micro-dash.get/get',
+      webpack: {
+        entryPath: './src/get',
+        target: {
+          primary: 'web',
+        },
+      },
+      typescript: {
+        outputDir: 'dist/micro-dash.get',
+      },
+    },
+    {
       moduleName: 'micro-dash.isnull',
       packageVersion,
       outputPath: 'dist/micro-dash.isnull/isNull',
