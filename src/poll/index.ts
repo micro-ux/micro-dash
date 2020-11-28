@@ -8,9 +8,9 @@ const DEFAULT_MAX_RETRIES = 10;
 export type PollerCallbackParams = any | null | undefined;
 
 export interface PollerOptions {
-  shouldPollingStop: (callbackParams: PollerCallbackParams) => boolean;
-  onSuccess: (callbackParams: PollerCallbackParams) => any;
-  onRetryLimitExceeded?: (callbackParams: PollerCallbackParams) => any;
+  shouldPollingStop: (callbackParams?: PollerCallbackParams) => boolean;
+  onSuccess: (callbackParams?: PollerCallbackParams) => any;
+  onRetryLimitExceeded?: (callbackParams?: PollerCallbackParams) => any;
   intervalInMillis?: number | null | undefined;
   maxRetries?: number | null | undefined;
   callbackParams?: PollerCallbackParams;
